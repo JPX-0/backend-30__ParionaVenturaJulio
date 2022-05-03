@@ -4,9 +4,10 @@ const getRandom = async (res, cant) => {
   if(args.mode == "cluster") { // el servidor se inicia en modo CLUSTER.
     // --- MSG ---
     // >> Al no poder importar desde un archivo commonjs decií traer todo el codigo.
+    // >> Se reduce el número máximo por defecto ya que mostraba un error 504.
     // --- MSG ---
     let qty;
-    if(isNaN(cant)) qty = 100000000;
+    if(isNaN(cant)) qty = 10000000;
     else qty = cant;
     const dataRandom = [];
     for(let i = 0; i < qty; i++) {

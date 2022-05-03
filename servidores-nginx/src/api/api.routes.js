@@ -4,6 +4,6 @@ import randomRoutes from './random/random.routes.js';
 const router = express.Router();
 
 //Routes
-router.use('/randoms', randomRoutes);
+router.use('/api', randomRoutes);
 
 export default router;

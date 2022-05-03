@@ -17,13 +17,13 @@ let getApiRandom;
 
 const randomRoutes = express.Router();
 
-randomRoutes.get('/', (req, res) => {
+randomRoutes.get('/randoms', (req, res) => {
   const { cant } = req.query;
   if(cant == undefined) return getApiRandom(res, "start"); // envia un string
   if(isNaN(cant)) return res.json({ error: "the quantity entered must be a number" });
   getApiRandom(res, cant); // envia la data
 });
-randomRoutes.get('/:cant', (req, res) => {
+randomRoutes.get('/randoms/:cant', (req, res) => {
   const { cant } = req.params;
   if(cant == undefined) return getApiRandom(res, "start"); // envia un string
   if(isNaN(cant)) return res.json({ error: "the quantity entered must be a number" });

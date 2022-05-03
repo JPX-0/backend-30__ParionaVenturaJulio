@@ -7,7 +7,7 @@ import { getError, getHome, getInfo, getLogout } from '../../controllers/routes.
 const router = express.Router();
 
 //Routes
-router.use('/api', authRoutes);
+router.use('/auth', authRoutes);
 
 router.get('/', (req, res) => {
   const user = req.user;
