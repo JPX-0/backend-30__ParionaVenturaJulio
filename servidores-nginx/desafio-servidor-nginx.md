@@ -14,7 +14,7 @@
     #
     Ejemplo1:
       <p align="center"><img src="https://firebasestorage.googleapis.com/v0/b/backend-clases.appspot.com/o/nginx-part1.PNG?alt=media&token=4fdb2146-69a1-407f-b067-bcb81f5b9104" alt="ejemplo nginx"/></p>
-    **_usar la configuracion de nginx llamada "nginx.example1.conf", deberá copiar el contenido y pegarlo en su archivo de configuracion donde esté hubicado el "nginx.exe"_**
+    **_usar la configuración de nginx llamada "nginx.example1.conf", deberá copiar el contenido y pegarlo en su archivo de configuración donde esté ubicado el "nginx.exe"_**
     #
 
 * Luego, modificar la configuración para que todas las consultas a /api/randoms sean redirigidas a un cluster de servidores gestionado desde nginx, repartiéndolas equitativamente entre 4 instancias escuchando en los puertos 8082, 8083, 8084 y 8085 respectivamente..
@@ -28,5 +28,5 @@
     #
     Ejemplo2:
       <p align="center"><img src="https://firebasestorage.googleapis.com/v0/b/backend-clases.appspot.com/o/nginx-part2.PNG?alt=media&token=24013554-614e-4012-ac43-e4cfc694e4c3" alt="ejemplo nginx"/></p>
-    **_usar la configuracion de nginx llamada "nginx.example2.conf", deberá copiar el contenido y pegarlo en su archivo de configuracion donde esté hubicado el "nginx.exe"_**
+    **_usar la configuración de nginx llamada "nginx.example2.conf", deberá copiar el contenido y pegarlo en su archivo de configuración donde esté ubicado el "nginx.exe"_**
     #
